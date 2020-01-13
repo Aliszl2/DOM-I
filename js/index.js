@@ -50,48 +50,68 @@ logo.setAttribute("src", siteContent["nav"]["img-src"]);
 let navBar = document.getElementsByTagName("a");
 console.log(navBar);
 
- navBar[0].textContent="Services";
- navBar[1].textContent="Product";
- navBar[2].textContent="Vision";
- navBar[3].textContent="Features";
- navBar[4].textContent="About";
- navBar[5].textContent="Contact";
+navBar[0].textContent = "Services";
+navBar[1].textContent = "Product";
+navBar[2].textContent = "Vision";
+navBar[3].textContent = "Features";
+navBar[4].textContent = "About";
+navBar[5].textContent = "Contact";
 // Images
- let roundImg = document.querySelector("#cta-img");
- console.log(roundImg);
- roundImg.src = "img/header-img.png";
+let roundImg = document.querySelector("#cta-img");
+console.log(roundImg);
+roundImg.src = "img/header-img.png";
 
- let midPageImg = document.querySelector("#middle-img");
- console.log(midPageImg);
- midPageImg.src = "img/mid-page-accent.jpg";
+let midPageImg = document.querySelector("#middle-img");
+console.log(midPageImg);
+midPageImg.src = "img/mid-page-accent.jpg";
 
- //CTA
- let ctaButton = document.querySelector(".cta .cta-text button");
- console.log(ctaButton);
- ctaButton.textContent = "Get Started";
+//CTA
+let ctaButton = document.querySelector(".cta .cta-text button");
+console.log(ctaButton);
+ctaButton.textContent = "Get Started";
 
- let ctaText = document.querySelector(".cta .cta-text h1");
- console.log(ctaButton);
- ctaText.textContent = "DOM IS AWESOME";
+let ctaText = document.querySelector(".cta .cta-text h1");
+console.log(ctaButton);
+ctaText.textContent = "DOM IS AWESOME";
 
 //Top Content
 
 let topContentHeader = document.querySelectorAll(".top-content h4");
 let topContentPara = document.querySelectorAll(".top-content p");
 console.log(topContentHeader);
-topContentHeader[0].textContent="Features";
-topContentPara[0].textContent="Features content lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat";
-topContentHeader[1].textContent="About";
-topContentPara[1].textContent="About content lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat";
-
+topContentHeader[0].textContent = "Features";
+topContentPara[0].textContent =
+  "Features content lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat";
+topContentHeader[1].textContent = "About";
+topContentPara[1].textContent =
+  "About content lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat";
 
 // Bottom content
 let bottomContentHeader = document.querySelectorAll(".bottom-content h4");
 let bottomContentPara = document.querySelectorAll(".bottom-content p");
 console.log(topContentHeader);
-bottomContentHeader[0].textContent="Services";
-bottomContentPara[0].textContent="Features content lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat";
-bottomContentHeader[1].textContent="Product";
-bottomContentPara[1].textContent="About content lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat";
-bottomContentHeader[2].textContent="Vision";
-bottomContentPara[2].textContent="Vision content lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat";
+bottomContentHeader[0].textContent = "Services";
+bottomContentPara[0].textContent =
+  "Features content lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat";
+bottomContentHeader[1].textContent = "Product";
+bottomContentPara[1].textContent =
+  "About content lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat";
+bottomContentHeader[2].textContent = "Vision";
+bottomContentPara[2].textContent =
+  "Vision content lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat";
+
+// contact and copyright
+let contactHeader = document.querySelectorAll(".contact h4");
+console.log(contactHeader);
+
+let contactPara = document.querySelectorAll(".contact p");
+console.log(contactPara);
+
+contactHeader.textContent = "Contact";
+contactPara[0].textContent = "22 Station House, Cambridge.  CB1 3RY";
+contactPara[1].textContent = "(+44)01223 412138";
+contactPara[2].textContent = "sales@greatidea.io";
+
+let copyright = document.querySelectorAll("footer p");
+console.log(copyright);
+copyright[0].textContent = "Copyright Great Idea! 2020";
