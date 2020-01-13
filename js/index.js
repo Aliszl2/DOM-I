@@ -86,3 +86,12 @@ topContentPara[1].textContent="About content lorem ipsum dolor sit amet, consect
 
 
 // Bottom content
+let bottomContentHeader = document.querySelectorAll(".bottom-content h4");
+let bottomContentPara = document.querySelectorAll(".bottom-content p");
+console.log(topContentHeader);
+bottomContentHeader[0].textContent="Services";
+bottomContentPara[0].textContent="Features content lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat";
+bottomContentHeader[1].textContent="Product";
+bottomContentPara[1].textContent="About content lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat";
+bottomContentHeader[2].textContent="Vision";
+bottomContentPara[2].textContent="Vision content lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat";
