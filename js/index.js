@@ -76,7 +76,7 @@ ctaButton.textContent = "Get Started";
 
 let ctaText = document.querySelector(".cta .cta-text h1");
 console.log(ctaButton);
-ctaText.textContent = "DOM IS AWESOME";
+ctaText.textContent = "DOM MANIPULATION IS AWESOME";
 
 //Top Content
 
@@ -111,21 +111,39 @@ console.log(contactHeader);
 let contactPara = document.querySelectorAll(".contact p");
 console.log(contactPara);
 
-contactHeader.textContent = "Contact";
+contactHeader[0].textContent = "Contact";
+contactHeader[0].style.color = "green";
 
 contactPara[0].textContent = "22 Station House, Cambridge.  CB1 3RY";
 contactPara[1].textContent = "(+44)01223 412138";
 contactPara[2].textContent = "sales@greatidea.io";
 
+// const contactParaArray = Array.from(contactPara);
+
+
+let textContent = document.querySelectorAll(".text-content p");
+console.log(textContent);
+const textContentArray = Array.from(textContent);
+console.log(textContentArray);
+// textContentArray.forEach(e => {
+//   if (e[i]%2 === 0){
+//     e[i].style.color = red;
+//   }else{
+//     e[i].style.color = blue;
+//   }
+ 
+// })
+
+
 let copyright = document.querySelectorAll("footer p");
 console.log(copyright);
 copyright[0].textContent = "Copyright Great Idea! 2020";
-
+// copyright[0].fontWeight = 900;
 
 const newNavItem1 = document.createElement('a');
 const newNavItem2 = document.createElement('a');
-newNavItem1.textContent = 'item1';
-newNavItem2.textContent = 'item2';
+newNavItem1.textContent = 'Log In';
+newNavItem2.textContent = 'Register';
 const newNavBar = document.querySelector('nav')
 
 newNavBar.prepend(newNavItem1);
@@ -138,7 +156,7 @@ navBarArray.forEach(e =>{e.style.color = "green"});
 
 // contactHeader.style.border = 'solid 4px red';
 
-//New button
+//New button functionality
 
 // 1- Create Element
 const newButton= document.createElement('button');
