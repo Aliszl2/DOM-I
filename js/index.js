@@ -70,7 +70,7 @@ console.log(midPageImg);
 midPageImg.src = "img/mid-page-accent.jpg";
 
 //CTA
-let ctaButton = document.querySelector(".cta .cta-text button");
+let ctaButton = document.querySelector(".cta-text button");
 console.log(ctaButton);
 ctaButton.textContent = "Get Started";
 
@@ -112,6 +112,7 @@ let contactPara = document.querySelectorAll(".contact p");
 console.log(contactPara);
 
 contactHeader.textContent = "Contact";
+
 contactPara[0].textContent = "22 Station House, Cambridge.  CB1 3RY";
 contactPara[1].textContent = "(+44)01223 412138";
 contactPara[2].textContent = "sales@greatidea.io";
@@ -134,3 +135,22 @@ newNavBar.append(newNavItem2);
 const navBarArray = Array.from(navBar);
 console.log(navBarArray);
 navBarArray.forEach(e =>{e.style.color = "green"});
+
+// contactHeader.style.border = 'solid 4px red';
+
+//New button
+
+// 1- Create Element
+const newButton= document.createElement('button');
+// 2- Add Content
+newButton.textContent = 'New Button';
+// 3- Select Target Parent Element
+const newButtonContent = document.querySelector('.cta-text');
+// 4- Add Element To Parent
+// Add element as parent container's last child
+newButtonContent.append(newButton);
+newButton.style.color ="white";
+newButton.style.backgroundColor ="blue";
+// newButton:hover.style.backgroundColor ="red";
+
+// let newButtonHover = document.querySelector(".cta-text button);
