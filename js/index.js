@@ -56,6 +56,10 @@ navBar[2].textContent = "Vision";
 navBar[3].textContent = "Features";
 navBar[4].textContent = "About";
 navBar[5].textContent = "Contact";
+
+
+
+
 // Images
 let roundImg = document.querySelector("#cta-img");
 console.log(roundImg);
@@ -115,3 +119,18 @@ contactPara[2].textContent = "sales@greatidea.io";
 let copyright = document.querySelectorAll("footer p");
 console.log(copyright);
 copyright[0].textContent = "Copyright Great Idea! 2020";
+
+
+const newNavItem1 = document.createElement('a');
+const newNavItem2 = document.createElement('a');
+newNavItem1.textContent = 'item1';
+newNavItem2.textContent = 'item2';
+const newNavBar = document.querySelector('nav')
+
+newNavBar.prepend(newNavItem1);
+newNavBar.append(newNavItem2);
+
+// Nav to green
+const navBarArray = Array.from(navBar);
+console.log(navBarArray);
+navBarArray.forEach(e =>{e.style.color = "green"});
