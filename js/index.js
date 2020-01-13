@@ -74,3 +74,15 @@ console.log(navBar);
  console.log(ctaButton);
  ctaText.textContent = "DOM IS AWESOME";
 
+//Top Content
+
+let topContentHeader = document.querySelectorAll(".top-content h4");
+let topContentPara = document.querySelectorAll(".top-content p");
+console.log(topContentHeader);
+topContentHeader[0].textContent="Features";
+topContentPara[0].textContent="Features content lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat";
+topContentHeader[1].textContent="About";
+topContentPara[1].textContent="About content lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat";
+
+
+// Bottom content
